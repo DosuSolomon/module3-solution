@@ -1,0 +1,9 @@
+<h3 style="color: red">{{ctrl.emptyMessage}}</h3>
+<ul>
+	<li ng-repeat = "x in ctrl.foundItems">
+		<div>{{x.short_name}} - {{x.name}}</div>
+		<div>{{x.description}}</div>
+		<button ng-click="ctrl.onRemove({index: $index});">Don't want this one!</button>
+		<hr>
+	</li>
+</ul>
